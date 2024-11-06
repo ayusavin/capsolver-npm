@@ -1,4 +1,6 @@
-const parameters = {
+import { TaskParameters } from './types';
+
+const parameters: TaskParameters = {
     ImageToTextTask: [
         { name: "body", required: false, type: "string" },
         { name: "module", required: false, type: "string" },
@@ -182,7 +184,6 @@ const parameters = {
         { name: "image", required: false, type: "string" },
         { name: "question", required: false, type: "string" }
     ],
-
     FunCaptchaTaskProxyless: [
         { name: "websiteURL", required: false, type: "string" },
         { name: "websitePublicKey", required: false, type: "string" },
@@ -200,4 +201,4 @@ const parameters = {
 
 };
 
-module.exports = parameters;
+export default parameters; 
